@@ -1,0 +1,99 @@
+/* GALLERY STYLESHEET*/
+.header {
+    text-align: center;
+    color: #F9FAFA;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px; 
+}
+img{
+  width: 100%;
+}
+/*FOR default (2 columns), changed by JS*/
+.column {
+    flex: 50%;
+    padding: 0px 2px; 
+}
+.column img{
+    margin-top: 4px;
+    vertical-align: middle;
+}
+/* grid change btns */
+.btn {
+    border: none;
+    padding: 3vh 4vh;
+    background-color: #0F0F0F;
+    cursor: pointer;
+    font-size: 2em;
+    color:#878487;
+    margin-top: 10px;
+}
+.btn:hover {
+    background-color: #f1f1f1;
+    opacity: 0.8;
+}
+.btn.active {
+    background-color: #F9FAFA;
+    color: #0F0F0F;
+}
+@media screen and (max-width:768px){
+      .btn{
+        font-size: 2em;
+      }
+      .row {
+        padding: 0 10px !important; /* !importnant Lai js kods nenomainītu phone versijai row padding */
+      }
+}
+
+/* img opening modals */
+.myImg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+.myImg:hover {opacity: 0.5;}  
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stays in place */
+    z-index: 1; 
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; /* Enables scroll if needed */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 95%;
+    max-width: 1000px;
+    
+}
+/* Modal opening animation "zoom" Animation */
+.modal-content{  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 2em;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.close:hover{
+    color: #bbb;
+}

@@ -1,0 +1,43 @@
+.message-form{
+    margin-left: 10%;
+    margin-top: 10%; 
+}
+.left-contents{
+    position: absolute;
+    width: 50%;
+    height: 80vh;
+    background-color: #0F0F0F;
+    color:#F9FAFA;
+    font-size: 2em;
+    opacity: 0.6;
+}
+.bg-img{  
+    height: 80vh;
+    width: 100%;  
+    margin-bottom: -10px; 
+}
+#submit{
+    border: none;
+    padding: 10px 30px;
+    background-color: #F9FAFA;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#submit:hover {
+    background-color: #F9FAFA;
+    opacity: 0.8;
+}
+    
+@media screen and (max-width:768px){
+    .message-form h2{
+       text-align: center;
+    }
+    .message-form{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .left-contents{
+        width: 100%;
+        text-align: center; 
+    }
+}
