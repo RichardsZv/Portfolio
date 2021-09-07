@@ -15,20 +15,22 @@ img{
     display: none; 
 }
  /* Caption text */
-.text {
-    color: #F9FAFA;
+.text{
     font-size: 3em;
     position: absolute ;
     top: 50% ;
     left: 50% ;
     transform: translate(-50%, -50%);
-    opacity: 60%;
     width: 100%;
     text-align: center;
  }
+ .text a{
+     color:whitesmoke ;
+     font-family: 'Source Code Pro', monospace;
+ }
 .text:hover{
     font-size: 4em;
-    opacity: 1;
+    opacity: 0.8;
 }
  /*attelo telefona izmeram citu pareizaka izmera bildi*/
 @media screen and (max-width:768px){
@@ -44,6 +46,9 @@ img{
     }
     .text:hover{
         font-size: 3em;
+    }
+    .text a{
+        font-size: xx-large;
     }
 }
 /* Fading animation */

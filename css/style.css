@@ -35,7 +35,7 @@ nav{
 .nav-links{
   display: flex;
   width: 40%;
-  justify-content: space-around;
+  justify-content:space-evenly;
 }
 .nav-links li{
   list-style: none;
