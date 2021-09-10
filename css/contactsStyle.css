@@ -27,19 +27,38 @@
     background-color: #F9FAFA;
     opacity: 0.8;
 }
-    
+.fa{
+  font-size: 1em;
+  color:cornflowerblue;
+}
+i{
+  font-size: 1em;
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: lighter;
+}
+.fa:hover{
+  size: 1em;
+  opacity: 1;
+}
+
 @media screen and (max-width:768px){
-    .message-form h2{
-       text-align: center;
-    }
     .message-form{
         margin-left: 10px;
         margin-top: 10px;
     }
     .left-contents{
         width: 100%;
-        text-align: center; 
     }
+    .message-form h3{
+      text-align: center;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+    i{
+      font-size: medium;
+    }
+    
 }
 
 /* LOADING */
