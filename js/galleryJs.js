@@ -6,14 +6,14 @@ var i;
 function one() {
     for (i = 0; i < elements.length; i++) {
     elements[i].style.flex = "100%";
-    elements2[i].style.padding="2px 500px"; 
+    elements2[i].style.padding="2px 70vh"; 
   }
 };
 // Two cols
 function two() {
   for (i = 0; i < elements.length; i++) {
     elements[i].style.flex = "50%";
-    elements2[i].style.padding="0 100px"; 
+    elements2[i].style.padding="2px 60vh"; 
   }
 };
 // Four cols
