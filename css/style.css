@@ -20,6 +20,7 @@ nav{
   min-height: 8vh;
   background-color:#0F0F0F;
   font-size: 1.5em;
+  z-index: 1;
 }
 .logo{
   text-transform: uppercase;
@@ -87,7 +88,7 @@ a{
       width: 50%;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
-      z-index: 1;
+      z-index: 2;
   }
   .nav-links li{
       opacity: 0;
